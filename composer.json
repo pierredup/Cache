@@ -1,0 +1,52 @@
+{
+    "name": "styleci/cache",
+    "description": "StyleCI Cache Is An Analysis Cache System",
+    "keywords": ["Cache", "CS", "StyleCI", "Alt Three"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Brooks",
+            "email": "james@alt-three.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@alt-three.com"
+        },
+        {
+            "name": "Joseph Cohen",
+            "email": "joe@alt-three.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "~3.0",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.7.6"
+    },
+    "suggest": {
+        "illuminate/contracts": "Required to use the illuminate adapter.",
+        "illuminate/support": "Enables Laravel support."
+    },
+    "autoload": {
+        "psr-4": {
+            "StyleCI\\Cache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StyleCI\\Tests\\Cache\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
