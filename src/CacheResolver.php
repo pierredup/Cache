@@ -65,15 +65,13 @@ class CacheResolver
      * @param string $name
      * @param string $default
      *
-     * @return $this
+     * @return void
      */
     public function setUp($repo, $name, $default)
     {
         $data = $this->adapter->get($repo, $name) ?: $this->adapter->get($repo, $default);
 
         file_put_contents($this->path, (string) $data);
-
-        return $this;
     }
 
     /**
@@ -82,13 +80,11 @@ class CacheResolver
      * @param int    $repo
      * @param string $name
      *
-     * @return $this
+     * @return void
      */
     public function tearDown($repo, $name)
     {
         $this->adapter->put($repo, $name, file_get_contents($this->path));
-
-        return $this;
     }
 
     /**
@@ -97,12 +93,10 @@ class CacheResolver
      * @param int    $repo
      * @param string $name
      *
-     * @return $this
+     * @return void
      */
     public function flush($repo, $name)
     {
         $this->adapter->flush($repo, $name);
-
-        return $this;
     }
 }
