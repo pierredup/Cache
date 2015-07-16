@@ -49,6 +49,16 @@ class CacheResolver
     }
 
     /**
+     * Get the cache path on the disk.
+     *
+     * @return string
+     */
+    public function path()
+    {
+        return $this->path;
+    }
+
+    /**
      * Set up the cache on the disk for use.
      *
      * @param int    $repo

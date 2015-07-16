@@ -49,6 +49,13 @@ class CacheResolverTest extends AbstractTestCase
         @unlink(static::$path);
     }
 
+    public function testPath()
+    {
+        $resolver = new CacheResolver(Mockery::mock(AdapterInterface::class), static::$path);
+
+        $this->assertSame($resolver->path(), static::$path);
+    }
+
     public function testSetUpBasic()
     {
         $resolver = new CacheResolver($adapter = Mockery::mock(AdapterInterface::class), static::$path);
