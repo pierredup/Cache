@@ -38,6 +38,7 @@ class CacheResolver
      * Create a new config resolver instance.
      *
      * @param \StyleCI\Cache\Adapters\AdapterInterface $adapter
+     * @param string                                   $path
      *
      * @return void
      */
