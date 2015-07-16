@@ -63,7 +63,6 @@ class CacheResolver
         file_put_contents($this->path, (string) $data);
     }
 
-
     /**
      * Store the cache from the disk after use.
      *

@@ -13,10 +13,10 @@ namespace StyleCI\Tests\Cache;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use StyleCI\Cache\CacheResolver;
-use StyleCI\Cache\CacheServiceProvider;
 use StyleCI\Cache\Adapters\AdapterInterface;
 use StyleCI\Cache\Adapters\IlluminateAdapter;
+use StyleCI\Cache\CacheResolver;
+use StyleCI\Cache\CacheServiceProvider;
 
 /**
  * This is the service provider test class.
