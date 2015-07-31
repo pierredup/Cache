@@ -49,6 +49,16 @@ class CacheResolver
     }
 
     /**
+     * Destroy a cache resolver instance.
+     *
+     * @return void
+     */
+    public function __destruct()
+    {
+        @unlink($this->path);
+    }
+
+    /**
      * Get the cache path on the disk.
      *
      * @return string
