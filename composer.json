@@ -26,6 +26,7 @@
         "phpunit/phpunit": "^4.7.6"
     },
     "suggest": {
+        "doctrine/cache": "Required to use the doctrine adapter.",
         "illuminate/contracts": "Required to use the illuminate adapter.",
         "illuminate/support": "Enables Laravel support."
     },
